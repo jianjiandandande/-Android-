@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title"/>
+    <EditText
+        android:id="@+id/student_sno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入学号"/>
+
+    <EditText
+        android:id="@+id/student_sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入姓名"/>
+
+    <EditText
+        android:id="@+id/student_ssex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入性别"/>
+
+
+    <EditText
+        android:id="@+id/student_sage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入年龄"/>
+
+
+    <EditText
+        android:id="@+id/student_sdept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入系别"/>
+
+
+    <Button
+        android:id="@+id/student_add_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认添加"/>
+</LinearLayout>

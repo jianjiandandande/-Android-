@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/input1_update"
+        android:background="@drawable/editview_border"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/input2_update"
+        android:layout_width="match_parent"
+        android:background="@drawable/editview_border"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/update_choose_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="性别："
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"/>
+        <Spinner
+            android:layout_marginRight="30dp"
+            android:id="@+id/spinner_sex_update"
+            android:layout_width="100sp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+        </Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/editview_border"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/input3_update"
+        android:textSize="20sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/editview_border"
+        android:layout_height="40dp"
+        android:id="@+id/input4_update"
+        android:textSize="20sp"
+        android:inputType="text"/>
+    <Button
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/update_data_ok"
+        android:background="#FF28B9F2"
+        android:textSize="30sp"
+        android:textColor="#FFFFFFFF"
+        android:text="确  认"/>
+
+</LinearLayout>

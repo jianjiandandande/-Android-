@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.gaowenxing.keshe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="学生成绩管理系统"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.gao.other.StudentActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Student"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.gao.other.TeacherActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Teacher"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.gao.other.ManagerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Manager"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.gao.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.gao.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.su.AddActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.su.UpdateInfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.zhao.ChooseCourseActivity"/>
+        <activity android:name=".activity.sun.ShowCcreditActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.zhao.SelectActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.sun.UpdateActivity"/>
+        <activity android:name=".activity.sun.Uploadgrades" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

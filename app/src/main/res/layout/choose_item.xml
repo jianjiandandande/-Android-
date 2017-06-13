@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_course"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/course_no"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/teacher_no"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/choose"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="@drawable/textview_border"
+        android:text="选择"/>
+
+</LinearLayout>

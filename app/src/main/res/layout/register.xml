@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login"
+    android:orientation="vertical">
+    <include layout="@layout/title"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/spinner"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_register"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="学号/教师号/职工号"
+        android:textSize="20sp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_below="@+id/new_accent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_register"
+        android:hint="请输入密码"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_below="@+id/new_password"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/again_password"
+        android:hint="请再次输入密码"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/again_password"
+        android:text="确认注册"
+        android:textSize="30sp"
+        android:id="@+id/register"
+        android:textColor="#FFFAFEFF"
+        android:background="#FF0DC3FF"/>
+</LinearLayout>

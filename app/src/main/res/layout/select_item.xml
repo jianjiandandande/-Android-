@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:id="@+id/text_item_view1"
+        android:background="@drawable/textview_border"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:id="@+id/text_item_view2"
+        android:background="@drawable/textview_border"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:id="@+id/text_item_view3"
+        android:background="@drawable/textview_border"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:id="@+id/text_item_view4"
+        android:background="@drawable/textview_border"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:id="@+id/text_item_view5"
+        android:background="@drawable/textview_border"
+        android:layout_weight="1"/>
+    <CheckBox
+        android:id="@+id/text_item_choose"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="@drawable/textview_border"
+        android:text="选择"/>
+
+
+</LinearLayout>

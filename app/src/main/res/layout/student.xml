@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="学号:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/text_num_student"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="姓名:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_name_student"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="性别:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_sex_student"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="出生年份:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_date_student"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="专业:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="130dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_dept_student"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/student_update_info"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:background="#e53de9"
+            android:text="修改资料"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"/>
+
+        <Button
+            android:id="@+id/student_update_password"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="#e53de9"
+            android:text="修改密码"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/student_choose_course"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:background="#e53de9"
+            android:text="我要选课"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"/>
+
+        <Button
+            android:id="@+id/student_select_grade"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="#e53de9"
+            android:text="成绩查询"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
