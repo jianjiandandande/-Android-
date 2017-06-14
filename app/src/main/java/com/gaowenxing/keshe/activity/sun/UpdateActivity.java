@@ -318,7 +318,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
             }
         }
         if (count == 0) {
-            Toast.makeText(this, "您还未修改任何信息!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "您还未确认修改!", Toast.LENGTH_SHORT).show();
         }
     }
 
