@@ -68,13 +68,9 @@ public class ShowCcreditActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
         mRecyclerView.setLayoutManager(layoutManager);
-
-        Log.d("", "onCreate: chengjichaxun"+"----");
+        
         initData();
-        for (Object[] data : datas) {
-            Log.d("", "onCreate: chengjichaxun"+data);
-        }
-
+ 
         adapter = new ShowCreditAdapter(datas);
 
         mRecyclerView.setAdapter(adapter);
