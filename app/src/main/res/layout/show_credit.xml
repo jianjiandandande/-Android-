@@ -36,8 +36,70 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:id="@+id/credit_recycle">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="通过课程查询"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:hint="请输入课程名"
+            android:gravity="center_vertical"
+            android:background="@drawable/editview_border"
+            android:id="@+id/edit_select"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="查询"
+            android:id="@+id/btn_select"
+            android:background="#8eeaea"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="课程名"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="教师名"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="成绩 "
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/recycle_select">
     </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
