@@ -149,44 +149,55 @@ public class ShowCcreditActivity extends AppCompatActivity implements View.OnCli
 
                 String course_name = edit_condition.getText().toString();
 
-                object[0] = course_name;//课程名
+
 
                 Cursor cursor_cno = mOperate.selectData("Course","Cno","Cname = "+ "'"+course_name+"'");
-                if (cursor_cno.moveToFirst()){
-                    do {
 
-                        Cno = cursor_cno.getString(cursor_cno.getColumnIndex("Cno"));
+                if (cursor_cno.getCount()==0){
+                    //如果课程名不存在，就将数组的每个值都赋为null
+                    object[0] = "null";
+                    object[1] = "null";
+                    object[2] = "null";
+                    Toast.makeText(this, "请检查课程名!", Toast.LENGTH_SHORT).show();
+                }else {
 
-                    }while (cursor_cno.moveToNext());
-                }
+                    object[0] = course_name;//课程名
 
-                Cursor cursor_grade = mOperate.selectData("SC","Tno,Grade","Sno = "+"'"+Sno+"' and "+"Cno = "+"'"+Cno+"'");
-                if (cursor_grade.moveToFirst()){
-                    do {
+                    if (cursor_cno.moveToFirst()) {
+                        do {
 
-                        Tno = cursor_grade.getString(cursor_grade.getColumnIndex("Tno"));
-                        object[2] = cursor_grade.getString(cursor_grade.getColumnIndex("Grade"));//成绩
+                            Cno = cursor_cno.getString(cursor_cno.getColumnIndex("Cno"));
 
-                    }while(cursor_grade.moveToNext());
-                }
+                        } while (cursor_cno.moveToNext());
+                    }
 
-                Cursor cursor_tname = mOperate.selectData("Teacher","Tname","Tno = "+ "'"+Tno+"'");
-                if (cursor_tname.moveToFirst()){
-                    do {
+                    Cursor cursor_grade = mOperate.selectData("SC", "Tno,Grade", "Sno = " + "'" + Sno + "' and " + "Cno = " + "'" + Cno + "'");
+                    if (cursor_grade.moveToFirst()) {
+                        do {
 
-                        object[1] = cursor_tname.getString(cursor_tname.getColumnIndex("Tname"));//教师名
+                            Tno = cursor_grade.getString(cursor_grade.getColumnIndex("Tno"));
+                            object[2] = cursor_grade.getString(cursor_grade.getColumnIndex("Grade"));//成绩
 
-                    }while (cursor_tname.moveToNext());
-                }
-                if (condition_datas.size()>0){
-                    condition_datas.clear();//如果你用这个查询了好几次，那么这个集合中的数据会
-                    // 被累加起来，但我们按条件查询，最终的成绩只有一个，所以在每次查询到新数据时，
-                    // 要把之前的旧数据清除掉
+                        } while (cursor_grade.moveToNext());
+                    }
+
+                    Cursor cursor_tname = mOperate.selectData("Teacher", "Tname", "Tno = " + "'" + Tno + "'");
+                    if (cursor_tname.moveToFirst()) {
+                        do {
+
+                            object[1] = cursor_tname.getString(cursor_tname.getColumnIndex("Tname"));//教师名
+
+                        } while (cursor_tname.moveToNext());
+                    }
+                    if (condition_datas.size() > 0) {
+                        condition_datas.clear();//如果你用这个查询了好几次，那么这个集合中的数据会
+                        // 被累加起来，但我们按条件查询，最终的成绩只有一个，所以在每次查询到新数据时，
+                        // 要把之前的旧数据清除掉
+                    }
                 }
                 condition_datas.add(object);//加入新数据
                 condition_adapter = new ShowCreditAdapter(condition_datas);//初始化适配器
                 condition_recycleView.setAdapter(condition_adapter);//绑定
                 break;
-        }
     }
 }
