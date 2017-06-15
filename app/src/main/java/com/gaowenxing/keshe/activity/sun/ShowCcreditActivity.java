@@ -189,12 +189,14 @@ public class ShowCcreditActivity extends AppCompatActivity implements View.OnCli
 
                         } while (cursor_tname.moveToNext());
                     }
-                    if (condition_datas.size() > 0) {
-                        condition_datas.clear();//如果你用这个查询了好几次，那么这个集合中的数据会
-                        // 被累加起来，但我们按条件查询，最终的成绩只有一个，所以在每次查询到新数据时，
-                        // 要把之前的旧数据清除掉
-                    }
+                    
                 }
+                if (condition_datas.size() > 0) {
+                     condition_datas.clear();//如果你用这个查询了好几次，那么这个集合中的数据会
+                     // 被累加起来，但我们按条件查询，最终的成绩只有一个，所以在每次查询到新数据时，
+                     // 要把之前的旧数据清除掉
+                }
+             
                 condition_datas.add(object);//加入新数据
                 condition_adapter = new ShowCreditAdapter(condition_datas);//初始化适配器
                 condition_recycleView.setAdapter(condition_adapter);//绑定
